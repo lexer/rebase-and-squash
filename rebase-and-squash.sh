@@ -12,7 +12,7 @@ git reset --hard $ancestor
 # Squash all commits from ancestor to previous SHA.
 git merge --squash HEAD@{1}
 # Perform the commit, prompting for the message.
-git commit
+git commit -m $1
 # Fetch the latest changes from the upstream branch.
 git fetch origin dev
 # Rebase the current single commit onto the latest.
